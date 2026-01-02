@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+logs/
+
+# Configuration
+config.json
+
+# Debug files
+*.html
+*.png
+*.jpg
+*.gif
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+
+# Batch files
+*.bat
+
+# Test files
+*.pyc
