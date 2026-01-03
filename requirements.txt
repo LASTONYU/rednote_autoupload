@@ -1,4 +1,4 @@
-requests
-pillow
-schedule
 playwright
+pystray
+Pillow
+pyinstaller
