@@ -1,4 +1,0 @@
-playwright
-pystray
-Pillow
-pyinstaller

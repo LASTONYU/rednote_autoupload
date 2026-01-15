@@ -1,0 +1,20 @@
+[workspace]
+name = "Trea_test"
+channels = ["conda-forge"]
+platforms = ["win-64"] # 关键：只保留 Windows，删除 linux-64
+
+[dependencies]
+python = "3.12.*"
+pillow = "*"
+six = "*"
+pywin32 = "*"
+pyinstaller = ">=6.18.0,<7"
+
+[pypi-dependencies]
+customtkinter = "*"
+pystray = "*"
+playwright = "*"
+
+[tasks]
+# 这里可以定义你的运行快捷方式
+start = "python xiaohongshu_uploader.py"

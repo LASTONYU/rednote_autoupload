@@ -1,9 +1,22 @@
-# --- 核心隐私数据 (必须排除！) ---
+# --- 核心隐私数据 ---
+# 排除所有浏览器缓存和登录状态目录
 edge_profile_data/
 edge_automation_profile/
 edge_profile/
-# 排除配置文件（包含你的发布标题、话题等私密偏好）
+.browsers/
+# 排除本地个人配置文件
 config.json
+
+# --- 图标与资源文件 (特殊处理) ---
+# 排除所有媒体文件防止测试图上传
+*.jpg
+*.jpeg
+*.png
+*.ico
+# --- 关键：保留你设计好的图标资源 ---
+# 请确保你的图标文件名与下面一致（或者按需修改）
+!logo.png
+!logo.ico
 
 # --- 打包产物与缓存 ---
 dist/
@@ -12,25 +25,20 @@ build/
 __pycache__/
 *.pyc
 
-# --- 媒体文件 (防止误上传测试图片) ---
-# 如果你的项目目录下有用于测试的发布图片，建议排除
-*.jpg
-*.jpeg
-*.png
-# 但要保留图标，所以我们可以加上这一行例外：
-!app.ico
-
-# --- 运行时日志 ---
+# --- 运行时日志与锁文件 ---
 *.log
+*.lock
+# 排除你代码中提到的实例锁文件
+xhs_uploader_v1.lock
 xiaohongshu_edge_error.log
 
 # --- 开发环境与工具 ---
 .vscode/
 .idea/
-.pixi/
-pixi.lock
-venv/
 .venv/
+venv/
+# Pixi 环境目录（通常很大，不建议上传）
+.pixi/
 
 # --- 系统文件 ---
 .DS_Store
